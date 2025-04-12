@@ -1,0 +1,43 @@
+.shop-page {
+  display: flex;
+  flex-direction: column;
+  background-color: #f9f9f9;
+}
+
+/* ✅ Centered Search/Filter section */
+.shop-search-filter-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  padding: 2rem;
+  flex-wrap: wrap;
+  background-color: #ffffff;
+  border-bottom: 1px solid #ddd;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  margin-bottom: 1rem;
+}
+
+/* ✅ Product display section */
+.shop-products {
+  flex: 3;
+  padding: 0 2rem 2rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+/* Responsive tweaks (optional but useful) */
+@media (max-width: 768px) {
+  .shop-search-filter-wrapper {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .shop-products {
+    padding: 1rem;
+    gap: 1rem;
+  }
+}
