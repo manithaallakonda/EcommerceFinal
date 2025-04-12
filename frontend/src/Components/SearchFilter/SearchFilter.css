@@ -1,0 +1,107 @@
+.search-filter-container {
+    background-color: #fdfdfd;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.07);
+    margin-bottom: 2rem;
+    font-family: 'Segoe UI', sans-serif;
+    color: #333;
+  }
+  
+  .search-filter-container h2 {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    color: #ff4f81;
+  }
+  
+  .search-bar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .search-bar input {
+    flex: 1;
+    padding: 10px 14px;
+    font-size: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 12px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .search-bar input:focus {
+    border-color: #ff4f81;
+    outline: none;
+  }
+  
+  .filters {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 1.2rem;
+    margin-top: 1.5rem;
+  }
+  
+  .filter-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .filter-group label {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #555;
+  }
+  
+  .filter-group input,
+  .filter-group select {
+    padding: 8px 12px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 0.95rem;
+    background-color: #fff;
+    transition: all 0.2s ease;
+  }
+  
+  .filter-group input:focus,
+  .filter-group select:focus {
+    border-color: #ff4f81;
+    outline: none;
+  }
+  
+  .price-slider {
+    width: 100%;
+    padding: 8px 0;
+  }
+  
+  .sort-by {
+    margin-top: 1.5rem;
+  }
+  
+  .sort-by label {
+    margin-right: 10px;
+    font-weight: 600;
+  }
+  
+  .sort-by select {
+    padding: 8px 12px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    background-color: #fff;
+  }
+  
+  @media (max-width: 768px) {
+    .filters {
+      grid-template-columns: 1fr;
+    }
+  
+    .search-bar {
+      flex-direction: column;
+    }
+  
+    .search-bar input {
+      width: 100%;
+      margin-top: 8px;
+    }
+  }
+  
